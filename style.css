@@ -1,0 +1,137 @@
+body{
+    background-color: #333;
+}
+#fan{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 10em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+#fan div{
+    width: 30em;
+    height: 4em;
+    background-color: ivory;
+    border: 1px solid lightskyblue;
+    box-shadow: 0 2px 2px 2px #0005;
+    padding: 1em;
+    position: absolute;
+    top: -2em;
+    transform-origin: 2em center;
+    text-align: right;
+    border-radius: 150% 7em 7em 150%;
+}#fan:hover div::after{
+    content: "";
+    position: absolute;
+    width: 30.2em;
+    height: 4.2em;
+    box-shadow: inset 0px 0px 2px 3px rgba(1, 2, 53, 0.6);
+    padding: 1em;
+    top: -0.2em;
+    left: -0.1em;
+    border-radius: 150% 7em 7em 150%;
+}
+#fan div:nth-child(1),
+#fan div:nth-child(2),
+#fan div:nth-child(3),
+#fan div:nth-child(4),
+#fan div:nth-child(5),
+#fan div:nth-child(6),
+#fan div:nth-child(7),
+#fan div:nth-child(8),
+#fan div:nth-child(9),
+#fan div:nth-child(10),
+#fan div:nth-child(11),
+#fan div:nth-child(12),
+#fan div:nth-child(13),
+#fan div:nth-child(14),
+#fan div:nth-child(15){
+    transform: rotate(-10deg);
+    transition: 5s ease-in-out;
+}
+
+#fan:hover div:nth-child(1){
+    transform: rotate(-10deg);
+    background-color: #ff6666;
+}
+#fan:hover div:nth-child(2){
+    transform: rotate(-20deg);
+    background-color: #ffb366;
+}
+#fan:hover div:nth-child(3){
+    transform: rotate(-30deg);
+    background-color: #ffd966;
+}
+#fan:hover div:nth-child(4){
+    transform: rotate(-40deg);
+    background-color: #ffff66;
+}
+#fan:hover div:nth-child(5){
+    transform: rotate(-50deg);
+    background-color: #d9ff66;
+}
+#fan:hover div:nth-child(6){
+    transform: rotate(-60deg);
+    background-color: #b3ff66;
+}
+#fan:hover div:nth-child(7){
+    transform: rotate(-70deg);
+    background-color: #8cff66;
+}
+#fan:hover div:nth-child(8){
+    transform: rotate(-80deg);
+    background-color: #66ff66;
+}
+#fan:hover div:nth-child(9){
+    transform: rotate(-90deg);
+    background-color: #66ff8c;
+}
+#fan:hover div:nth-child(10){
+    transform: rotate(-100deg);
+    background-color: #66ffb3;
+}
+#fan:hover div:nth-child(11){
+    transform: rotate(-110deg);
+    background-color: #66ffd9;
+}
+#fan:hover div:nth-child(12){
+    transform: rotate(-120deg);
+    background-color: #66ffff;
+}
+#fan:hover div:nth-child(13){
+    transform: rotate(-130deg);
+    background-color: #66d9ff;
+}
+#fan:hover div:nth-child(14){
+    transform: rotate(-140deg);
+    background-color: #66b3ff;
+}
+#fan:hover div:nth-child(15){
+    transform: rotate(-150deg);
+    background-color: #668cff;
+}
+#fan div:nth-child(15)::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    background-color: #333;
+    box-shadow: inset 0 0 2px 2px #0007;
+    top: 2.5em;
+}
+#fan div h2{
+    padding-left: 5px;
+    padding-top: 3px;
+}
+#fan div h2,
+#fan div p{
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.35em;
+    color: #050137;
+}
